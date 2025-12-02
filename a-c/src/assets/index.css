@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+.move-up{
+    animation: move-up 1s linear;
+}
+
+@keyframes move-up{
+    from{
+     bottom:-700px;
+    }
+    to{
+    bottom: 0px;
+    }
+}
+.move-down{
+    animation: move-down 1s linear;
+}
+
+@keyframes move-down{
+    from{
+     bottom:0px;
+    }
+    to{
+     bottom:-700px
+    }
+}
+
+@media (max-width: 550px) {
+   .sx{
+    grid-template-columns: repeat(3,1fr);
+   }
+   .sx-flex{
+    flex-direction: column;
+   }
+   .sx-width{
+    width: 100%;
+   }
+  }
