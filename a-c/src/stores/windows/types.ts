@@ -4,7 +4,7 @@ export type WindowsStore={
     windowClosed:boolean
     dateIndex:number|null
     showArrow:boolean
-    openWindow:(opts:{index?:number,toggleAll:boolean})=>void
+    openWindow:(opts:{index?:number,toggleAll?:boolean})=>void
     resetDateIndex:()=>void
 }
 
