@@ -48,7 +48,7 @@ function isDateIndex(){
           {{i+1}}
         </div>
       </div>
-        <img v-else :src="SHOWS[i].image"/>
+        <img v-else-if="SHOWS[i]" :src="SHOWS[i].image"/>
       </button>
     
     </div>
