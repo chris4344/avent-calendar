@@ -1,7 +1,7 @@
 
 
 function getDate(){
-    return new Date("December 30, 1975 23:15:30")
+    return new Date()
 }
 
  function getDaysLeft(targetDay:number){
