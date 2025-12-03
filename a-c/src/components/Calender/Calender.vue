@@ -43,7 +43,7 @@ function isDateIndex(){
     <div class="w-fit grid grid-cols-4 sm:grid-cols-6 sx gap-5">
       <button @click="()=>windowStore.openWindow({index:i})" :disabled="!canOpen(i)" :class="[`w${i}`]" class="w-[100px] h-[100px] border-white border-2 text-xl text-white relative"  :key="i"  v-for="window,i in windowStore.windows">
 
-      <div v-if="!window.open" lass="bg-red-500 absolute top-2 left-2 h-fit w-8 rounded-full">
+      <div v-if="!window.open" class="bg-red-500 absolute top-2 left-2 h-fit w-8 rounded-full">
         <div class="flex justify-center items-center">
           {{i+1}}
         </div>
